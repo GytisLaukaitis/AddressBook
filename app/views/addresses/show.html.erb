@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+<div class="jumbotron">
+  <h1 class="display-4"><%= @address.first_name %>
+    <%= @address.last_name %></h1>
+  <p class="lead"><%= @address.address %> | <%= @address.phone %> | <%= @address.email %></p>
+  <hr class="my-4">
+  <div class="text-center">
+    <%= link_to 'Edit', edit_address_path(@address), class:"btn btn-secondary" %>
+    <%= link_to 'Back', addresses_path, class:"btn btn-dark" %>
+  </div>
+</div>
+</div>
+
