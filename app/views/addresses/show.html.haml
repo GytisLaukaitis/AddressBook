@@ -1,0 +1,13 @@
+%p#notice= notice
+.container-fluid
+  .jumbotron
+    %h1.display-4
+      = @address.first_name
+      = @address.last_name
+    %p.lead
+      = @address.address
+      | #{@address.phone} | #{@address.email}
+    %hr.my-4/
+    .text-center
+      = link_to 'Edit', edit_address_path(@address), class:"btn btn-secondary"
+      = link_to 'Back', addresses_path, class:"btn btn-dark"

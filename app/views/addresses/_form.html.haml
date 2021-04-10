@@ -1,0 +1,22 @@
+= form_with(model: address) do |form|
+  - if address.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(address.errors.count, "error")
+        prohibited this address from being saved:
+      %ul
+        - address.errors.each do |error|
+          %li= error.full_message
+  .container
+    .field.form-group
+      = form.text_field :address, class:"form-control", placeholder:"Address"
+    .field.form-group
+      = form.text_field :phone, class:"form-control", placeholder:"Phone number"
+    .field.form-group
+      = form.text_field :first_name, class:"form-control", placeholder:"First name"
+    .field.form-group
+      = form.text_field :last_name, class:"form-control", placeholder:"Last name"
+    .field.form-group
+      = form.text_field :email, class:"form-control", placeholder:"Email"
+    .actions
+      = form.submit class:"btn btn-secondary"
