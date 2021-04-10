@@ -2,14 +2,14 @@
 = simple_form_for @address do |form|
   .container
     .field.form-group
-      = form.text_field :address, required: true, class:"form-control", placeholder:"Address"
+      = form.text_field :address, required: true, minlength: 5 , maxlength: 30, class:"form-control", placeholder:"Address"
     .field.form-group
-      = form.text_field :phone, required: true, class:"form-control", placeholder:"Phone number"
+      = form.text_field :phone, required: true, minlength: 5 , maxlength: 30, class:"form-control", placeholder:"Phone number"
     .field.form-group
-      = form.text_field :first_name, required: true, class:"form-control", placeholder:"First name"
+      = form.text_field :first_name, required: true, minlength: 5 , maxlength: 30, class:"form-control", placeholder:"First name"
     .field.form-group
-      = form.text_field :last_name, required: true, class:"form-control", placeholder:"Last name"
+      = form.text_field :last_name, required: true, minlength: 5 , maxlength: 30, class:"form-control", placeholder:"Last name"
     .field.form-group
-      = form.text_field :email, required: true, class:"form-control", placeholder:"Email"
+      = form.text_field :email, required: true, minlength: 5 , maxlength: 30, class:"form-control", placeholder:"Email"
     .actions
       = form.submit class:"btn btn-secondary"
