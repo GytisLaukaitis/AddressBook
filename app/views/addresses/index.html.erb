@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="text-center">Addresses</h1>
+<h1 class="text-center m-5">Addresses</h1>
 <div class="col-sm-12 my-auto">
 <div class="d-flex p-2">
 
@@ -24,9 +24,9 @@
         <td><%= address.first_name %></td>
         <td><%= address.last_name %></td>
         <td><%= address.email %></td>
-        <td><%= link_to 'Show', address %></td>
-        <td><%= link_to 'Edit', edit_address_path(address) %></td>
-        <td><%= link_to 'Destroy', address, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', address, class:"btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_address_path(address), class:"btn btn-secondary" %></td>
+        <td><%= link_to 'Destroy', address, class:"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
