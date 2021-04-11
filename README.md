@@ -1,24 +1,10 @@
-# README
+# Address Book CRUD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Usage
 
-Things you may want to cover:
+`$ git clone https://github.com/GytisLaukaitis/AddressBook.git`  
+`$ gem install rails`
+(might need to install yarn too)
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+open in http://127.0.0.1:3000/addresses
